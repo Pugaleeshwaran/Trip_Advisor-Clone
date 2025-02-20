@@ -99,6 +99,10 @@ body{
     font-size: 21px;
     margin-right: 5px;
 }
+.navbar__three{
+    justify-content: center;
+    align-items: center;
+}
 .navbar__three--button{
     margin-left: 5px;
     font-size: 16px;
@@ -273,15 +277,27 @@ body{
     gap: 20px;
     margin-left: 200px;
     margin-right: 85px;
+    cursor: pointer;
 }
 .recommended__img__main{
     flex-grow: 1;
     flex-basis: 30%;
+    position: relative;
 }
 .recommended__img__main img{
     width:100%;
     height: 130%;
     border-radius: 10px;
+}
+.recommended__img__main img:hover{
+    opacity: 0.9;
+}
+.recommended__img__main h2{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 3px 6px rgba(0,0,0,0.87);
 }
 .recommended__two{
     padding: 10px;
@@ -289,7 +305,7 @@ body{
     margin-left: 210px;
 }
 .recommended__two p{
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .recommended__two__img{
@@ -301,20 +317,36 @@ body{
 .recommended__two__img{
     flex-grow: 1;
     flex-basis: 20%;
+    cursor: pointer;
 }
 .recommended__two__img img{
     width: 100%;
     border-radius: 10px;
+    
 }
 .recommended__two__img__main{
     position: relative;
 }
-.recommended__img__main ,h5,h3{
+.recommended__two__img__main h5{
     text-align: center;
     margin-top: 10px;
 }
-.recommended__img__main h5:hover{
-    border-bottom: solid black 1px;
+.recommended__two__img__main h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.recommended__two__img__main p{
+    text-align: center;
+    height: 100%;
+}
+.recommended__two__img__main img:hover{
+    opacity: 0.9;
+}
+.recommended__two__img__main h5:hover{
+    text-decoration: underline;
+}
+.recommended__two__img__main h4:hover{
+    text-decoration: underline;
 }
 .recommended__img__main__heart{
     z-index: 2;
@@ -327,4 +359,247 @@ body{
     border-radius:100%;
     cursor: pointer;
 }
+.recommended__three{
+    padding: 10px;
+    margin-left: 210px
 
+}
+.recommended__three h1{
+    margin-top: 5px;
+}
+.recommended__three p{
+    margin-top: 10px;
+}
+.recommended__three__img{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+    margin-top: 20px;
+    gap: 20px;
+}
+.recommended__three__img__main{
+    flex-grow: 1;
+    flex-basis: 20%;
+    cursor: pointer;
+}
+.recommended__three__img__main img{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}
+.recommended__three__img__main h5{
+    text-align: center;
+    margin-top: 10px;
+} 
+.recommended__three__img__main h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.recommended__three__img__main__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.recommended__three__img__main__item i{
+    margin-top: 10px;
+}
+.recommended__three__img__main__item h5{
+    margin-top: 2px;
+}
+.recommended__three__img__main img:hover{
+    opacity: 0.9;
+}
+.recommended__three__img__main h5:hover{
+    text-decoration: underline;
+}
+.recommended__three__img__main h4:hover{
+    text-decoration: underline;
+}
+.most__explore{
+    padding: 10px;
+    background-color: aliceblue;
+}
+.most__explore h1{
+    margin-top: 10px;
+    margin-left: 210px;
+}
+.most__explore__img{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 210px;
+    margin-right: 200px;
+    gap: 20px;
+    margin-top: 20px;
+}
+.most__explore__img__main{
+    flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+.most__explore__img__main img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.most__explore__img__main h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.most__explore__img__main__heart{
+    background-color: #ff0059;
+    padding: 10px;
+    position: absolute;
+    font-size: 20px;
+    border-radius: 100%;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+
+}
+.most__explore__img__main__heart:hover{
+    background-color: #5bd5a9;
+
+}
+.most__explore__img__main__heart p:hover{
+    color: #ff0059 ;
+    
+
+}
+.most__explore__img__main img:hover{
+    opacity: 0.9;
+}
+.most__explore__img__main h4:hover{
+    text-decoration: underline;
+}
+.top__trip{
+    padding: 10px;
+}
+.top__trip h1{
+    margin-left: 210px;
+    margin-top: 50px;
+}
+.top__trip p{
+    margin-left: 210px;
+    margin-top: 10px;
+}
+.top__trip__img{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 210px;
+    margin-right: 200px;
+    gap: 20px;
+    margin-top: 20px;
+}
+.top__trip__img__main{
+    flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+.top__trip__img__main img{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.top__trip__img__main h2{
+    position: absolute;
+    color: white;
+    bottom: 40px;
+    left: 20px;
+    text-shadow: 1px 3px 6px rgba(0,0,0,0.87);
+    cursor: pointer;
+}
+.top__trip__img__main img:hover{
+    opacity: 0.9;
+}
+.sponsor{
+    background-color: rgb(215, 224, 232);
+    display: flex;
+    margin-left: 220px;
+    margin-right: 210px;
+}
+.sponsor__img{
+    width: 60%;
+    margin: 20px;
+}
+.sponsor__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor__content__logo a{
+    color: black;
+    margin-left: 5px;
+}
+.sponsor__content__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor__content img{
+    width: 40px;
+    margin-right: 10px;
+}
+.sponsor__content p{
+    font-weight: lighter;
+    text-align: center;
+}
+.sponsor__content h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sponsor__content button{
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    border:transparent
+}
+.sponsor__content button:hover{
+    opacity: 0.9;
+}
+.rental{
+    padding: 10px;
+    margin-left: 210px;
+    margin-top: 40px;
+    margin-right: 200px;
+}
+.rental h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.rental h3{
+ text-align: center;
+ }
+.rental__img{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+.rental__img__main{
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.rental__img__main img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+.rental__img__main h5{
+    margin-top: 5px;
+    text-align: center;
+}
