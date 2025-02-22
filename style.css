@@ -17,22 +17,27 @@ body {
     font-family: "Frutiger";
 }
 
-.screen {
-    width: 100%;
-}
-
 .navbar {
     padding: 10px;
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 
 .navbar__main {
     width: 75%;
     display: flex;
     justify-content: space-between;
+}
+.menu {
+    font-size: 20px;
+    position: relative;
+    right: 200px;
+    display: none;
 }
 
 .navbar__one {
@@ -59,7 +64,7 @@ body {
     margin-right: 200px;
     margin-right: 50px;
     cursor: pointer;
-    width: 100px;
+    width: 50%;
 
 }
 
@@ -163,6 +168,7 @@ body {
     gap: 40px;
     font-size: 12px;
     height: 30px;
+    width: 100%;
 }
 
 .category__element__one {
@@ -303,6 +309,7 @@ body {
     border-radius: 30px;
     border: transparent;
     cursor: pointer;
+    
 }
 
 .recommended {
@@ -312,13 +319,14 @@ body {
 
 .recommended h1 {
     margin-top: 10px;
-    margin-left: 200px;
+    width: 50%;
+    margin-left: 15%;
 }
 
 .recommended p {
     margin-top: 10px;
     margin-bottom: 20px;
-    margin-left: 200px;
+    margin-left: 15%;
 }
 
 .recommended__img {
@@ -326,8 +334,8 @@ body {
     justify-content: space-between;
     margin-top: 10px;
     gap: 20px;
-    margin-left: 200px;
-    margin-right: 85px;
+    margin-left: 15%;;
+    margin-right: 5%;
     cursor: pointer;
 }
 
@@ -349,8 +357,9 @@ body {
 
 .recommended__img__main h2 {
     position: absolute;
-    top: 180px;
-    left: 20px;
+    top: 100%;
+    bottom: 10%;
+    left: 5%;
     color: white;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.87);
 }
@@ -358,7 +367,7 @@ body {
 .recommended__two {
     padding: 10px;
     margin-top: 60px;
-    margin-left: 210px;
+    margin-left: 15%;
 }
 
 .recommended__two p {
@@ -369,8 +378,8 @@ body {
 .recommended__two__img {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    margin-right: 205px;
+    gap: 30px;
+    margin-right: 15%;
 }
 
 .recommended__two__img {
@@ -419,18 +428,18 @@ body {
 .recommended__img__main__heart {
     z-index: 2;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 2%;
+    right: 2%;
     font-size: 20px;
     background-color: white;
-    padding: 10px;
+    padding: 3%;
     border-radius: 100%;
     cursor: pointer;
 }
 
 .recommended__three {
     padding: 10px;
-    margin-left: 210px
+    margin-left: 15%
 }
 
 .recommended__three h1 {
@@ -444,7 +453,7 @@ body {
 .recommended__three__img {
     display: flex;
     justify-content: space-between;
-    margin-right: 200px;
+    margin-right: 14%;
     margin-top: 20px;
     gap: 20px;
 }
@@ -463,12 +472,12 @@ body {
 
 .recommended__three__img__main h5 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .recommended__three__img__main h4 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .recommended__three__img__main__item {
@@ -476,15 +485,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 .recommended__three__img__main__item i {
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .recommended__three__img__main__item h5 {
-    margin-top: 2px;
+    margin-top: 1%;
 }
 
 .recommended__three__img__main img:hover {
@@ -500,20 +510,21 @@ body {
 }
 
 .most__explore {
+    margin-top: 2%;
     padding: 10px;
     background-color: aliceblue;
 }
 
 .most__explore h1 {
     margin-top: 10px;
-    margin-left: 210px;
+    margin-left:15%;
 }
 
 .most__explore__img {
     display: flex;
     justify-content: space-between;
-    margin-left: 210px;
-    margin-right: 200px;
+    margin-left: 15%px;
+    margin-right: 14%px;
     gap: 20px;
     margin-top: 20px;
 }
@@ -540,7 +551,7 @@ body {
 
 .most__explore__img__main__heart {
     background-color: #ff0059;
-    padding: 10px;
+    padding: 2%;
     position: absolute;
     font-size: 20px;
     border-radius: 100%;
@@ -575,20 +586,20 @@ body {
 }
 
 .top__trip h1 {
-    margin-left: 210px;
-    margin-top: 50px;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 
 .top__trip p {
-    margin-left: 210px;
+    margin-left: 15%;
     margin-top: 10px;
 }
 
 .top__trip__img {
     display: flex;
     justify-content: space-between;
-    margin-left: 210px;
-    margin-right: 200px;
+    margin-left: 15%;
+    margin-right:14%;
     gap: 20px;
     margin-top: 20px;
 }
@@ -609,8 +620,8 @@ body {
 .top__trip__img__main h2 {
     position: absolute;
     color: white;
-    bottom: 40px;
-    left: 20px;
+    bottom: 15%;
+    left: 4%;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.87);
     cursor: pointer;
 }
@@ -622,13 +633,19 @@ body {
 .sponsor {
     background-color: rgb(215, 224, 232);
     display: flex;
-    margin-left: 220px;
-    margin-right: 210px;
+    margin-left: 15%;
+    margin-right: 14%;
+    width: 71%;
 }
 
 .sponsor__img {
-    width: 60%;
-    margin: 20px;
+    flex-grow: 1;
+    flex-basis: 100%
+    
+}
+.sponsor__img img{
+    width:100%;
+    margin: 3%;
 }
 
 .sponsor__content {
@@ -650,13 +667,14 @@ body {
 }
 
 .sponsor__content img {
-    width: 40px;
+    width: 5%;
     margin-right: 10px;
 }
 
 .sponsor__content p {
     font-weight: lighter;
     text-align: center;
+    margin-top: 2%;
 }
 
 .sponsor__content h1 {
@@ -671,10 +689,11 @@ body {
     color: white;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     border-radius: 30px;
-    border: transparent
+    border: transparent;
+    margin-bottom: 3%;
 }
 
 .sponsor__content button:hover {
@@ -683,9 +702,9 @@ body {
 
 .rental {
     padding: 10px;
-    margin-left: 210px;
-    margin-top: 40px;
-    margin-right: 200px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-right: 14%;
 }
 
 .rental h1 {
@@ -734,19 +753,20 @@ body {
 
 .footer {
     background-color: aliceblue;
+    height: 100%;
 }
 
 .footer__set__one {
 
     padding: 10px;
     display: flex;
-    gap: 250px;
+    gap: 10%;
 }
 
 .footer__containers__one {
     display: flex;
     margin-top: 20px;
-    margin-left: 210px;
+    margin-left: 15%;
 }
 
 .footer__containers__element__one h4 {
@@ -824,7 +844,7 @@ body {
 }
 
 .footer__containers__four{
-    margin-left: 210px;
+    margin-left: 15%;
 }
 
 .footer__containers__four__element {
@@ -840,8 +860,7 @@ body {
     display: flex;
     gap: 15px;
     margin-bottom: 10px;
-    font-size: 15px;
-    width: 90%;
+    font-size: 13px;
     flex-wrap: wrap;
     cursor: pointer;
     text-decoration: underline;
@@ -853,13 +872,18 @@ body {
 
 }
 .footer__containers__four__term__p{
-    width: 90%;
     font-size: 10px;
-    margin-bottom: 30px;
+}
+.footer__containers__five{
+    width: 100%;
+    margin-bottom: 5%;
+    position: relative;
+
 }
 .footer__containers__five__select{
     display: flex;
-    margin-right: 200px;
+    margin-left: 5%;
+    width: 100%;
 }
 .form__one select{
     border: 2px solid gainsboro;
@@ -869,15 +893,107 @@ body {
     margin-left: 20px;
     position: relative;
     top: 40px;
-    left: 30px;
+    left: 10%;
+}
+.form__two select{
+    border: 2px solid gainsboro;
+    font-size: 16px;
+   padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    position: relative;
+    top: 40px;
+    left: 10%;
 }
 .footer__icons{
-    position: relative;
-    top: 70px;
-    left: 90px;
+    position: absolute;
+    top: 10px;
+    left: 10%;
 }
 .footer__icons i{
     margin-left: 20px;
     font-size: 20px;
     cursor: pointer;
+}
+@media screen and (max-width:1300px){
+    .main__img__element__button{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:1100px){
+    body{
+        font-size: 10px;
+    }
+    .navbar__main{
+        font-size: 10px;
+    }
+    .navbar__three--button{
+        font-size: 10px;
+    }
+    .category{
+        font-size: 10px;
+    }
+    .main__img__element__button{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .footer__set__two{
+        display: block;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .navbar__two{
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+
+    }
+    .category{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:700px) {
+    .category{
+        font-size: 5px;
+        gap: 5px;
+    }
+    .main__img__element__button{
+        display: none;
+    }
+    .recommended__img__main h2{
+        font-size: 8px;
+    }
+    .recommended__img__main__heart{
+        font-size: 8px;
+    }
+    .recommended__two__img__main h4{
+        font-family: 8px;
+    }
+    .recommended__three__img__main__item{
+        display: none;
+    }
+    .most__explore__img__main h4{
+        font-size: 8px;
+    }
+    .most__explore__img__main__heart p{
+        font-size: 8px;
+    }
+    .top__trip__img__main h2{
+        font-size: 8px;
+    }
+    .sponsor__content{
+        font-size: 8px;
+    }
+    .sponsor__content button{
+        font-size: 8px;
+    }
+    .rental__img__main h3{
+        font-size: 8px;
+    }
+    .footer__containers__four__term{
+        font-size: 8px;
+    }
 }
